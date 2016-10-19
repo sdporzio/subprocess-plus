@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import os
+import os, sys
 import datetime
 from subprocess import call, Popen
-from __sample.__sample import _Notifier, _Temp2Perm
+from .__sample.__sample import _Notifier, _Temp2Perm
 
 firstRun = True
 procs = []
@@ -34,6 +34,7 @@ def ProcSeries(cmd,i,njobs,email=False,inName='logIn.log',outName='logOut.log',e
     _Temp2Perm(inl,logIn,cmd,start,end)
     _Temp2Perm(outl,logOut,cmd,start,end)
     if errl.tell() != 0:
+        print '\033[1;31mErrors have occurred!\033[0m (check %s)' %(logErr.name)
         _Temp2Perm(errl,logErr,cmd,start,end)
     if i==njobs-1:
         firstRun = True
@@ -72,6 +73,7 @@ def ProcParallel(cmd,i,njobs,email=False,inName='logIn.log',outName='logOut.log'
             _Temp2Perm(inl,logIn,name,start,end)
             _Temp2Perm(outl,logOut,name,start,end)
             if errl.tell() != 0:
+                print '\033[1;31mErrors have occurred!\033[0m (check %s)' %(logErr.name)
                 _Temp2Perm(errl,logErr,cmd,start,end)
         firstRun = True
         procs = []
