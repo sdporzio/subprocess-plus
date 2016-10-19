@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, Extension
-import numpy.distutils.misc_util
-import numpy as np
 
 with open('README.md') as f:
     readme = f.read()
@@ -20,7 +18,4 @@ setup(
     url='https://github.com/sdporzio/fancy-subprocesses',
     license='MIT',
     packages=['subprocPlus'],
-    install_requires=[
-        'numpy'
-    ],
     zip_safe=False)
