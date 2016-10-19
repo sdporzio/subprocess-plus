@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from context import sample
+from context import fancySubprocesses
 import unittest
 
 class BasicTestSuite(unittest.TestCase):

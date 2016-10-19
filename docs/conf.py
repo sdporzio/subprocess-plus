@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # FancySubprocesses documentation build configuration file, created by
-# sphinx-quickstart on Tue Oct 18 20:00:54 2016.
+# sphinx-quickstart on Tue Oct 18 20:03:59 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -14,6 +14,7 @@
 
 import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
