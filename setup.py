@@ -11,7 +11,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='FancySubprocesses',
+    name='fancySubprocesses',
     version='0.0.1',
     description='A set of functions to run parallel or series subprocesses with Python',
     long_description=readme,

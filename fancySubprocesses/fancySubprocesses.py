@@ -43,7 +43,7 @@ def FancySeries(cmd,i,njobs,email=False,inName='logIn.log',outName='logOut.log',
     Temp2Perm(outl,logOut,cmd,start,end)
     Temp2Perm(errl,logErr,cmd,start,end)
 
-def FancyParallel(cmd,i,njobs,procs=procs,email=False,inName='logIn.log',outName='logOut.log',errName='logErr.log'):
+def FancyParallel(cmd,i,njobs,procs,email=False,inName='logIn.log',outName='logOut.log',errName='logErr.log'):
     global firstRun
     if firstRun:
         logIn = open(inName, 'w')
