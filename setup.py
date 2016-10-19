@@ -16,6 +16,6 @@ setup(
     author='Salvatore Davide Porzio',
     author_email='porziodavide@gmail.com',
     url='https://github.com/sdporzio/fancy-subprocesses',
-    license='MIT',
+    license='GPL-3.0',
     packages=['subprocPlus'],
     zip_safe=False)
